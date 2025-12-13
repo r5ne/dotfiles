@@ -39,6 +39,8 @@ set termguicolors
 set t_Co=256
 " set a custom colorscheme
 colorscheme monoglow-lack
+" remove the background of the colorscheme to match the terminal theme
+hi Normal guibg=NONE ctermbg=NONE
 " enable syntax highlighting
 syntax enable
 
