@@ -1,7 +1,7 @@
 # Dependencies
 ---
 ## Other dotfiles
-- ./wallpapers
+- `./wallpapers`
 ## Programs
 - firefox
 - obsidian
