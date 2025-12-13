@@ -3,8 +3,8 @@
 jobless dotfiles for a jobless CS major
 ## Usage
 - Clone the repo.
-- `cd` into the directory of the dotfiles you want to use.
-- Run `stow --target=$HOME .`
+- Symlink `.stowrc` into your `$HOME` directory.
+- Run `stow [package name]` if the package has no OS specific dots and `stow --dir=$HOME/dotfiles/package [os specific subpackage]` if there are.
 ## Format
 - A new directory for each modular dotfiles I will want to use (usually translates to one program)
 - A subdirectory for the OS used if there are parts of the dots that are OS specific
