@@ -9,3 +9,4 @@
 - firefox
 - obsidian
 - swaybg
+- mate-polkit

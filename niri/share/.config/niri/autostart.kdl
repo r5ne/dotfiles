@@ -5,6 +5,7 @@
 
 // Daemons
 spawn-sh-at-startup "swaybg -i ~/pics/wallpapers/foglet_harbor.jpg"
+spawn-sh-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
 
 // Applications
 spawn-at-startup "footclient"
