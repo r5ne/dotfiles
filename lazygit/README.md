@@ -1,0 +1,2 @@
+# Dependencies
+- Any nerd font.
