@@ -9,13 +9,16 @@ window-rule {
 window-rule {
     match app-id="firefox"
     open-on-workspace "browser"
-    default-column-width { proportion 1.0; }
 }
 
 window-rule {
     match app-id="obsidian"
     open-on-workspace "notes"
-    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="discord"
+    open-on-workspace "chat"
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
