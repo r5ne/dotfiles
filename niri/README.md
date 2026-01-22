@@ -5,8 +5,11 @@
 - `./wallpapers`
 - `./niri/pc`
 ## Programs
+### Essential
+- swaybg
+- mate-polkit
+### As needed
 - footclient
 - firefox
 - obsidian
-- swaybg
-- mate-polkit
+- discord
