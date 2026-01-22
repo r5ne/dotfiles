@@ -5,7 +5,10 @@ workspace "chat"
 workspace "dev"
 workspace "notes"
 
+// I/O device configuration.
 include "devices.kdl"
+
+// Monitor mode and layout configuration.
 include "monitors.kdl"
 
 hotkey-overlay {
