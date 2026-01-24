@@ -1,9 +1,8 @@
 # Dependencies
 ---
 ## Other dotfiles
-- `./niri/share`
-- `./wallpapers`
-- `./niri/pc`
+- niri-deps-pc
+- wallpapers
 ## Programs
 ### Essential
 - swaybg
