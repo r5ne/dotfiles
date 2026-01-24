@@ -2,7 +2,7 @@
 jobless dotfiles for a jobless CS major
 ## Usage
 ### Setup
-- Clone the repo into your `$HOME` directory using `git clone https://github.com/r5ne/dotfiles ~`.
+- Clone the repo into your `$HOME` directory using `git clone git@github/r5ne/dotfiles.git ~`.
 - Symlink `.stowrc` into your `$HOME` directory using `ln -s ~/.dotfiles/.stowrc ~/` on unix and \[todo] on windows.
 ### Adding packages
 - Use `stow [package name]` to add the config files of [package name]. Make sure to read the README.md to make sure you have acquired all the dependencies.
