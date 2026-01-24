@@ -3,6 +3,7 @@
 ## Other dotfiles
 - niri-deps-pc
 - wallpapers
+- bash
 ## Programs
 ### Essential
 - swaybg
