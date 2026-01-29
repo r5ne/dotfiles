@@ -143,13 +143,6 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    // Screenshot keybinds
-    // Shift modifier when used with screen and window screenshots copies to clipboard instead of saving.
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Ctrl+Shift+Print { spawn-sh "niri msg action screenshot-screen --write-to-disk=false"; }
-    Mod+Print { screenshot-window; }
-    Mod+Shift+Print { spawn-sh "niri msg action screenshot-window --write-to-disk=false"; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
@@ -168,7 +161,31 @@ binds {
     // moving the mouse or pressing any other key.
     // Mod+Shift+S { power-off-monitors; }
 
-    // Programs
+    // Special DM programs
+    // Unlike other programs, don't use the shift modifier that usually indicates a program.
+    //
+    // App launcher
+    Mod+Space hotkey-overlay-title="Open an Application Picker: fsel" { spawn-sh "pkill otter-launcher || footclient --app-id=otter-launcher --window-size-chars=70x25 --override=colors.alpha=0.9 otter-launcher app"; }
+    // Utility launcher
+    Mod+Shift+Space hotkey-overlay-title="Open a Control Panel: otter-launcher" { spawn-sh "pkill otter-launcher || footclient --app-id=otter-launcher --window-size-chars=70x25 --override=colors.alpha=0.9 otter-launcher"; }
+    // Power menu
+    Mod+Shift+q hotkey-overlay-title="Open a Power Menu: otter-launcher" { spawn-sh "pkill otter-launcher || footclient --app-id=otter-launcher --window-size-chars=70x25 --override=colors.alpha=0.9 otter-launcher po"; }
+    // Color picker tool, output in hex.
+    Mod+Home hotkey-overlay-title="Open a hex Color Picker: hyprpicker" { spawn-sh "hyprpicker -laf hex"; }
+    // Color picker tool, output in rgb.
+    // Mod+Shift+Home hotkey-overlay-title="Open an rgb Color Picker: hyprpicker" { spawn-sh "hyprpicker -af rgb"; }
+
+    // Screenshot keybinds
+    // Shift modifier when used with screen and window screenshots copies to clipboard instead of saving.
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Ctrl+Shift+Print { spawn-sh "niri msg action screenshot-screen --write-to-disk=false"; }
+    Mod+Print { screenshot-window; }
+    Mod+Shift+Print { spawn-sh "niri msg action screenshot-window --write-to-disk=false"; }
+
+    // User programs
+    // Always use the Mod+Shift layer of the keyboard with software name agnostic keybinds preferred.
+    // e.g. using b for Browser instead of f for Firefox.
     //
     // Terminal.
     Mod+Shift+T hotkey-overlay-title="Open a Terminal: Foot" { spawn "footclient"; }
@@ -176,6 +193,6 @@ binds {
     Mod+Shift+B hotkey-overlay-title="Open a Browser: Firefox" { spawn "firefox"; }
     // Discord.
     Mod+Shift+D hotkey-overlay-title="Open a Messaging App: Discord" { spawn "discord"; }
-    // Notetaking
+    // Notetaking.
     Mod+Shift+N hotkey-overlay-title="Open a Notetaking App: Obsidian" { spawn-sh "obsidian --enable-features=UseOzonePlatform --ozone-platform-hint=auto"; }
 }

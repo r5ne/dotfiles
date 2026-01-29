@@ -10,6 +10,11 @@ window-rule {
     default-column-width { proportion 0.5; }
 }
 
+window-rule {
+    match app-id="otter-launcher"
+    open-floating true
+}
+
 // Open note-taking app in the notes workspace.
 window-rule {
     match app-id="obsidian"
