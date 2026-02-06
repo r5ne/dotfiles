@@ -165,7 +165,7 @@ binds {
     // Unlike other programs, don't use the shift modifier that usually indicates a program.
     //
     // App launcher
-    Mod+Space hotkey-overlay-title="Open an Application Picker: fsel" { spawn-sh "pkill otter-launcher || footclient --app-id=otter-launcher --window-size-chars=70x25 --override=colors.alpha=0.9 otter-launcher app"; }
+    Mod+Space hotkey-overlay-title="Open an Application Picker: fsel" { spawn-sh "footclient --app-id=otter-launcher --window-size-chars=70x25 --override=colors.alpha=0.9 fsel --detach"; }
     // Utility launcher
     Mod+Shift+Space hotkey-overlay-title="Open a Control Panel: otter-launcher" { spawn-sh "pkill otter-launcher || footclient --app-id=otter-launcher --window-size-chars=70x25 --override=colors.alpha=0.9 otter-launcher"; }
     // Power menu
@@ -195,4 +195,10 @@ binds {
     Mod+Shift+D hotkey-overlay-title="Open a Messaging App: Discord" { spawn "discord"; }
     // Notetaking.
     Mod+Shift+N hotkey-overlay-title="Open a Notetaking App: Obsidian" { spawn-sh "obsidian --enable-features=UseOzonePlatform --ozone-platform-hint=auto"; }
+    // Gaming.
+    Mod+Shift+S hotkey-overlay-title="Open a Game Manager: Steam" { spawn-sh "steam"; }
+}
+
+gestures {
+    hot-corners { off; }
 }
