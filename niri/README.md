@@ -1,5 +1,4 @@
 # Dependencies
----
 ## Other dotfiles
 - niri-deps-pc
 - wallpapers
